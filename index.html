@@ -20,4 +20,14 @@
       <botton>​🤩​ <spam>0</spam></botton>
   </main>
 </body>
+<script>
+  const botoes = document.querySelectorALL("button");
+  botoes.forEach(function(botao){
+    botao.addEventlistener("click" , botaoclicado);
+    function botaooclicado(){
+    let texto = botao.querySelector("span");
+    texto.textcontent++;
+    }
+  })
+</script>
 </html>
